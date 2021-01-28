@@ -1,0 +1,85 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url(font/PixelMplus10-Bold.ttf);
+}
+
+body {
+    font-family: MyFont;
+    color: white;
+    background-image: url("img/bg_2.png");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html,body{
+    height: 100%;
+}
+
+.back{
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 8px;
+    font-size: 24px;
+    position: relative;
+    top: 50px;
+    left: 75px;     
+}
+
+img{
+    width: 150px;
+    height: 150px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.image_container{
+    background-color: darkblue;
+    border: 3px solid white;
+    border-radius: 5%;
+    text-align: center; 
+}
+
+.name_container{
+    background-color: black;
+    padding: 3px 3px;
+    text-align: center;
+    border: 3px solid white;
+    border-radius: 5%;    
+}
+
+
+#main-container{
+    max-width: 80%;
+    display: grid;
+    gap:10px;
+    grid-template-columns: repeat(4,minmax(150px, 1fr));
+    margin: 0 auto;  
+    margin-top: 8%;
+    margin-bottom:50px;
+}
+
+
+
+@media screen and (max-width: 768px){ 
+    #main-container{
+        display: block;
+        margin-top: 20%;
+    }
+    .wrapper {
+        margin-bottom: 10px;
+    }
+    .back {
+        position: relative;
+        top: 50px;
+        left: 20px;
+    }
+}

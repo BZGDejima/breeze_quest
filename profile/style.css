@@ -1,0 +1,127 @@
+@font-face {
+	font-family: 'MyFont';
+	src: url(font/PixelMplus10-Bold.ttf);
+}
+
+body {
+    font-family: MyFont;
+    color: white;
+    background-image: url("img/bg_1.png");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+}
+
+
+.back{
+    text-decoration: none;
+    color: white;
+    padding: 5px 5px;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 8px;
+    font-size: 24px;
+    position: relative;
+    top: 50px;
+    left: 75px; 
+    margin-bottom: 10px;    
+}
+
+
+
+
+#main_container{
+    height: 80%;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#character_image{
+    height: 80%;
+    width: 50%;
+    background-color: darkblue;
+    border: 3px solid white;
+    margin: -3px;
+    border-radius: 8px;
+    padding:10px;
+    
+}
+
+.status_container{
+    height: 80%;
+    width: 50%;
+    background-color: black;
+    border: 3px solid white;
+    margin: -3px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* ここからフォンの効果 */
+    text-align: center;
+    letter-spacing: 8px;
+    font-size: 24px;
+}
+
+.contents{
+    padding-top: 10px;
+    /* margin: 10px 0 10px 0; */
+}
+
+#profile{
+    background-color: black;
+    margin: auto;
+    margin-top:-3%;
+    width: 100%;
+    max-width: 80%;
+    height: 20%;
+    border: 3px solid white;
+    border-radius: 8px;
+    letter-spacing: 8px;
+    font-size: 24px;
+    padding: 10px;
+    line-height: 1.5;
+}
+
+/* スマホ 画面
+ーーーーーーーーーーーーーーーーーーーー*/
+@media screen and (max-width: 768px){ 
+    
+
+#main_container {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+}  
+#character_image { 
+    width: 100%;
+}
+.status_container {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+#profile{
+    /* flex-direction: column; */
+    margin-top: 40px;
+    font-size: 16px;
+    height: auto;
+    
+} 
+}
