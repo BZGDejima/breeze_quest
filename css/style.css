@@ -172,7 +172,7 @@ a {
 /* フォーム画面 共通
 ーーーーーーーーーーーーーーーーーーーー*/
 .form-group label{
-    font-size: 0.18rem;
+    font-size: 1.20rem;
 }
 .form-group.row {
     margin: 5px;
@@ -319,15 +319,20 @@ legend {
 
 
 /* 登録画面 */
+.sign-up-container {
+    width: 100%;
+    margin: 0 auto;
+}
 .command ul li a{
     font-size: 0.15rem;
+    
 }
 .container.login-bg {
     margin: 0 0px;
 }
-.container {
+/* .container {
     margin: 0 50px;
-}
+} */
 /* ログイン画面 */
 .login-container {
     width:80%;
@@ -346,6 +351,9 @@ select.w-100 {
     width:100%;
     padding: 5px 0;
 }
+.form-group label {
+    font-size: 1.20rem;
+}
 /* キャラクター */
 .character-select_content img {
     width: 100px;
@@ -359,14 +367,12 @@ select.w-100 {
 .sign-up-bg {
     background-image:url(../images/bg_1.png);
     min-width: 100vh;
-    min-height: 178vh;
+    min-height: 200vh;
     }
-    .back {
-  
-        position: relative;
-        top: 50px;
-        left: 60px;
-  
-    }
+.back {
+    position: relative;
+    top: 50px;
+    left: 60px;
+}
 
 }

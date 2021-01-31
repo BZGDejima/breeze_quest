@@ -101,7 +101,11 @@ html,body{
 ーーーーーーーーーーーーーーーーーーーー*/
 @media screen and (max-width: 768px){ 
     
-
+.back {
+    position: relative;
+    top: 50px;
+    left: 20px;
+}
 #main_container {
     display: block;
     width: 100%;
@@ -121,7 +125,10 @@ html,body{
     /* flex-direction: column; */
     margin-top: 40px;
     font-size: 16px;
-    height: auto;
-    
+    height: auto;    
 } 
+
+
+
+
 }
